@@ -14,7 +14,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+  for (var i = 1; i < 100; i++) {
+  console.log( "In your cart, you have " + i + " time" );
+}
 }
 
 function total() {
