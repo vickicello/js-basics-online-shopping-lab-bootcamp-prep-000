@@ -16,7 +16,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  for (var i = 1; i < 100; i++) {
+  if (cart.length === 0) {
+    return 
+  }
+  for (var i = 1; i < cart.length; i++) {
   console.log( "In your cart, you have " + i + " time" );
 }
 }
