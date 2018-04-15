@@ -21,13 +21,22 @@ function viewCart() {
   } 
   if (cart.length === 1) {
     return `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`;
-    
   }
+    var r = `In your cart, you have`;
+    for (var i = 0; i < cart.length; i++) {
+    if(i===cart.length-1) {
+      r = r + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+     } else{
+      r = r + ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
+    }
+  }
+  return r;
 }
 
 function total() {
   var total = 0;
-  
+  for(i = 0; i < cart.length; i++);
+  total.push()
 }
 
 function removeFromCart(item) {
