@@ -42,7 +42,22 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var shop = false;
+  for (var i = 0; i < cart.length; i++){
+     if(cart[i].itemName===item) {
+       shop = true;
+     }
+   }
+   if (shop === false) {
+       return "That item is not in your cart.";
+     } else{
+        var x = cart.indexOf(item);
+        if(x===0) {
+         cart.shift();
+       } else{
+        cart.splice(x-1, 1);
+      }
+    }
 }
 
 function placeOrder(cardNumber) {
