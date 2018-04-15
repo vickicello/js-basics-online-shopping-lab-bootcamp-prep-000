@@ -17,13 +17,10 @@ function addToCart(item) {
 
 function viewCart() {
   if (cart.length === 0) {
-    return "Your shopping cart is empty."
+    return "Your shopping cart is empty.";
   } else {
-    `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
+     return `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`;
   }
-  for (var i = 1; i < cart.length; i++) {
-  console.log( "In your cart, you have " + i + " time" );
-}
 }
 
 function total() {
