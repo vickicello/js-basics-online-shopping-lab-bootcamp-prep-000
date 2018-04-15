@@ -20,7 +20,7 @@ function viewCart() {
     return "Your shopping cart is empty.";
   } 
   if (cart.length === 1) {
-    return `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`;
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
     var r = `In your cart, you have`;
     for (var i = 0; i < cart.length; i++) {
